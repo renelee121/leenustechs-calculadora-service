@@ -12,8 +12,7 @@ public enum OperationType {
     DIVISION,
     RAIZ,
     EXPONENTE,
-    FACTORIAL,
-    KAFKA;
+    FACTORIAL;
 
     public GenericEventObjectResponse execute(GenericEventObject GenericEventObject, OperationTypeService operationTypeService){
         EventOperation operation = operationTypeService.getOperation(this);
