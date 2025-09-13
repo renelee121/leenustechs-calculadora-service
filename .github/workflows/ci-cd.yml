@@ -29,7 +29,8 @@ jobs:
           tags: ${{ secrets.DOCKER_REGISTRY }}/leenustechs-calculadora-service:${{ github.sha }}
           build-args: |
             KAFKA_BOOTSTRAP_ADDRESS=${{ secrets.KAFKA_BOOTSTRAP_ADDRESS }}
-            KAFKA_TOPIC_NAME=${{ secrets.KAFKA_TOPIC_NAME }}
+            KAFKA_REQUEST_TOPIC_NAME=${{ secrets.KAFKA_REQUEST_TOPIC_NAME }}
+            KAFKA_RESPONSE_TOPIC_NAME=${{ secrets.KAFKA_RESPONSE_TOPIC_NAME }}
 
 
       - name: Update Deployment manifest
