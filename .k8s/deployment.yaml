@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: calculadora
-          image: hostinger.leenustechs.com.mx:5000/leenustechs-calculadora-service:4a7557a2fb8c3c47b0212af83a3a9563125702ea
+          image: hostinger.leenustechs.com.mx:5000/leenustechs-calculadora-service:cbe03c6afe87e528d664a3e9451a46d33e7c3941
           ports:
             - containerPort: 8081
           resources:
